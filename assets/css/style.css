@@ -12,6 +12,36 @@ body {
     /* ⬅️ penting untuk mobile */
 }
 
+.lang-switcher {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+    display: flex;
+    gap: 6px;
+}
+
+.lang-btn {
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    background: #e5e7eb;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #111;
+    transition: all 0.15s ease;
+}
+
+.lang-btn.active {
+    background: #4fd1c5;
+}
+
+.lang-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #111;
+}
+
 /* HERO */
 .hero {
     min-height: 100vh;
@@ -149,8 +179,21 @@ footer {
 }
 
 /* PROJECTS */
+/* EXPERIENCE CARD EFFECT */
 .project {
-    margin-bottom: 26px;
+    padding: 18px;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.project:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 0 #111;
 }
 
 .project h3 {
@@ -237,6 +280,15 @@ footer {
         font-size: 13px;
     }
 
+    .project {
+        padding: 16px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
     #contact .btn {
         width: 100%;
         justify-content: center;
@@ -251,32 +303,48 @@ footer {
 /* PROJECT TAGS */
 .project-tags {
     display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 10px;
 }
 
 .tag {
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
     border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 0 #111;
+    transition: all 0.15s ease;
+    cursor: default;
 }
 
-/* Tag Variants */
-.tag-government {
-    background: #e0f2fe;
-    color: #0369a1;
+/* Hover / Press */
+.tag:hover {
+    transform: translateY(1px);
+    box-shadow: 0 3px 0 #111;
 }
 
 .tag-enterprise {
-    background: #ecfeff;
-    color: #0f766e;
+    background: #67e8f9;
+    color: #000;
+}
+
+.tag-government {
+    background: #c7d2fe;
+    color: #000;
 }
 
 .tag-web3 {
-    background: #fef3c7;
-    color: #92400e;
+    background: #fde68a;
+    color: #000;
+}
+
+/* Optional extra category */
+.tag-product {
+    background: #86efac;
+    color: #000;
 }
 
 .fade-in {

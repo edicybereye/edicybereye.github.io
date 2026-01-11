@@ -33,13 +33,20 @@
 </head>
 
 <body>
+    <div class="lang-switcher">
+        <button onclick="setLang('id')" class="lang-btn active">🇮🇩 ID</button>
+        <button onclick="setLang('en')" class="lang-btn">🇬🇧 EN</button>
+    </div>
 
     <!-- HERO -->
     <section class="hero fade-in fade-1">
         <img src="assets/img/1767693214080.png" alt="Edi Kurniawan" class="avatar" />
 
         <h1>Edi Kurniawan</h1>
-        <p class="role">Chief Technology Officer</p>
+        <p class="role">
+            <span data-lang="id">Chief Technology Officer</span>
+            <span data-lang="en" style="display:none;">Chief Technology Officer</span>
+        </p>
 
         <div class="company">
             <span>PT Indonesia Digital Goldstar</span>
@@ -52,11 +59,23 @@
 
     <!-- ABOUT -->
     <section class="card fade-in fade-2">
-        <h2>About Me</h2>
+        <h2>
+            <span data-lang="id">Tentang Saya</span>
+            <span data-lang="en" style="display:none;">About Me</span>
+        </h2>
+
         <p>
-            Chief Technology Officer dengan pengalaman membangun sistem digital,
-            aplikasi web & mobile, arsitektur backend, serta pengembangan produk
-            berbasis teknologi untuk skala startup hingga enterprise.
+            <span data-lang="id">
+                Chief Technology Officer dengan pengalaman membangun sistem digital,
+                aplikasi web & mobile, arsitektur backend, serta pengembangan produk
+                berbasis teknologi untuk skala startup hingga enterprise.
+            </span>
+
+            <span data-lang="en" style="display:none;">
+                Chief Technology Officer with experience in building digital systems,
+                web & mobile applications, backend architecture, and technology-driven
+                product development for startups to enterprise-scale organizations.
+            </span>
         </p>
     </section>
 
@@ -64,7 +83,8 @@
 
     <!-- SKILLS -->
     <section class="card fade-in fade-3">
-        <h2>Core Skills</h2>
+        <span data-lang="id">Keahlian Utama</span>
+        <span data-lang="en" style="display:none;">Core Skills</span>
         <div class="skills">
             <span>System Architecture</span>
             <span>Backend Development</span>
@@ -76,12 +96,16 @@
 
     <!-- EXPERIENCE & PROJECTS -->
     <section class="card">
-        <h2>Experience & Projects</h2>
+        <h2>
+            <span data-lang="id">Pengalaman & Proyek</span>
+            <span data-lang="en" style="display:none;">Experience & Projects</span>
+        </h2>
+
 
         <!-- Project 1 -->
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
             <h3>Ashaba GYM</h3>
             <div class="project-gallery">
@@ -91,8 +115,15 @@
                 <img src="assets/img/projects/ashaba/report.png" alt="Ashaba Report">
             </div>
             <p class="project-desc">
-                Aplikasi ekosistem gym untuk manajemen member, layanan member, lead management,
-                dan back office operasional.
+                <span data-lang="id">
+                    Aplikasi ekosistem gym untuk manajemen member, layanan member,
+                    lead management, dan back office operasional.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Gym ecosystem application for member management, member services,
+                    lead management, and operational back-office systems.
+                </span>
             </p>
 
             <ul>
@@ -120,7 +151,7 @@
         <!-- Project 2 -->
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
             <h3>Ticketing Management System – PMI</h3>
             <div class="project-gallery">
@@ -131,8 +162,15 @@
             </div>
 
             <p class="project-desc">
-                Sistem ticketing untuk PT Putra Mandiri Informatika dengan multi entitas user
-                dan arsitektur containerized.
+                <span data-lang="id">
+                    Sistem ticketing untuk PT Putra Mandiri Informatika dengan multi entitas pengguna
+                    dan arsitektur berbasis container untuk mendukung operasional dan tim lapangan.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Ticketing management system for PT Putra Mandiri Informatika with multi-user entities
+                    and container-based architecture to support operations and field teams.
+                </span>
             </p>
 
             <ul>
@@ -146,12 +184,19 @@
         <!-- Project 3 -->
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
             <h3>AR & AP Sentria</h3>
             <p class="project-desc">
-                Mini ERP untuk Account Receivable (AR) dan Account Payable (AP)
-                PT Satkomindo Mediyasa.
+                <span data-lang="id">
+                    Mini ERP untuk pengelolaan Account Receivable (AR) dan Account Payable (AP)
+                    PT Satkomindo Mediyasa.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Mini ERP system for managing Accounts Receivable (AR) and Accounts Payable (AP)
+                    for PT Satkomindo Mediyasa.
+                </span>
             </p>
 
             <a href="https://sentria.satkomindo.com/" target="_blank">
@@ -173,16 +218,31 @@
 
 
             <p class="project-desc">
-                Platform kartu nama digital berbasis web untuk personal branding dan kebutuhan
-                profesional, yang dapat diakses melalui satu tautan dan dioptimalkan untuk perangkat mobile.
+                <span data-lang="id">
+                    Platform kartu nama digital berbasis web untuk personal branding dan kebutuhan profesional,
+                    yang dapat diakses melalui satu tautan dan dioptimalkan untuk perangkat mobile.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Web-based digital business card platform for personal branding and professional needs,
+                    accessible through a single link and optimized for mobile devices.
+                </span>
             </p>
 
             <ul>
-                <li>Profil digital terpusat (bio, kontak, social media)</li>
-                <li>Share instan via URL & QR Code</li>
-                <li>Mobile-first & responsive design</li>
-                <li>Update data real-time tanpa cetak ulang kartu fisik</li>
-                <li>Cocok untuk personal, profesional, dan corporate identity</li>
+                <li>
+                    <span data-lang="id">Profil digital terpusat (bio, kontak, media sosial)</span>
+                    <span data-lang="en" style="display:none;">Centralized digital profile (bio, contact, social
+                        media)</span>
+                </li>
+                <li>
+                    <span data-lang="id">Berbagi instan melalui URL & QR Code</span>
+                    <span data-lang="en" style="display:none;">Instant sharing via URL & QR Code</span>
+                </li>
+                <li>
+                    <span data-lang="id">Mobile-first & responsive design</span>
+                    <span data-lang="en" style="display:none;">Mobile-first & responsive design</span>
+                </li>
             </ul>
 
             <a href="https://me.inddigo.id/?editech.id" target="_blank">
@@ -194,8 +254,8 @@
         <!-- Project 4 -->
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-web3">Web3</span>
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-web3">🔗 Web3</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
             <h3>Wallet Token ING – Inddigo</h3>
             <div class="project-gallery">
@@ -207,10 +267,16 @@
             </div>
 
             <p class="project-desc">
-                Platform Web3 untuk wallet token, DeFi, NFT membership, dan integrasi payment
-                gateway FIAT ke crypto.
-            </p>
+                <span data-lang="id">
+                    Platform Web3 untuk wallet token, DeFi, NFT membership, serta integrasi payment gateway
+                    untuk konversi FIAT ke aset digital.
+                </span>
 
+                <span data-lang="en" style="display:none;">
+                    Web3 platform for token wallets, DeFi, NFT membership, and payment gateway integration
+                    for FIAT-to-crypto conversion.
+                </span>
+            </p>
             <ul>
                 <li>Landing: <a href="https://token.inddigo.id/" target="_blank">token.inddigo.id</a></li>
                 <li>Wallet: <a href="https://wallet.inddigo.id/" target="_blank">wallet.inddigo.id</a></li>
@@ -229,14 +295,21 @@
             </ul>
 
             <p class="project-desc">
-                Features: Send, Receive, Referral Member, Boost Point, DeFi Staking,
-                NFT Membership, FIAT Top-Up (Xendit), Hot Wallets.
+                <span data-lang="id">
+                    Fitur: Kirim, Terima, Referral Member, Boost Point, DeFi Staking,
+                    NFT Membership, Top-Up FIAT, Hot Wallets.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Features: Send, Receive, Member Referral, Boost Points, DeFi Staking,
+                    NFT Membership, FIAT Top-Up, Hot Wallets.
+                </span>
             </p>
         </div>
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-government">Government</span>
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-government">🏛 Government</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
             <h3>E-BMD Kota Probolinggo</h3>
             <div class="project-gallery">
@@ -249,39 +322,28 @@
 
 
             <p class="project-desc">
-                Sistem pengelolaan Barang Milik Daerah (BMD) yang dikembangkan sesuai dengan regulasi Kementerian Dalam
-                Negeri (Kemendagri), mencakup siklus penuh perencanaan, pengadaan, penatausahaan, hingga pelaporan aset
-                pemerintah daerah.
+                <span data-lang="id">
+                    Sistem pengelolaan Barang Milik Daerah (BMD) yang dikembangkan sesuai regulasi
+                    Kementerian Dalam Negeri (Kemendagri), mencakup perencanaan, pengadaan,
+                    penatausahaan, hingga pelaporan aset daerah.
+                </span>
+
+                <span data-lang="en" style="display:none;">
+                    Government Asset Management System developed in accordance with
+                    Ministry of Home Affairs (Kemendagri) regulations, covering planning,
+                    procurement, asset administration, and regional asset reporting.
+                </span>
             </p>
             <p class="project-desc">
-                Sistem ini mengimplementasikan alur dan referensi resmi, antara lain:
-            </p>
+                <span data-lang="id">
+                    Fitur utama: Geo Tagging aset berbasis peta, penyusutan aset,
+                    pemeliharaan, laporan neraca, dan Kartu Inventaris Barang (KIB).
+                </span>
 
-            <ul>
-                <li>RKBMD (Rencana Kebutuhan Barang Milik Daerah)</li>
-                <li>Pengadaan</li>
-                <li>BAST (Berita Acara Serah Terima)</li>
-                <li>SPM (Surat PErintah Membayar)</li>
-                <li>SP2D (Surat Perintah Pencairan Dana)</li>
-                <li>KIB A - F (Kartu Invetaris Barang)</li>
-
-
-            </ul>
-            <p class="project-desc">
-                Fitur utama:
-            </p>
-            <ul>
-                <li>Integrasi Maps & Geo Tagging untuk lokasi aset</li>
-                <li>Manajemen penyusutan aset</li>
-                <li>Modul pemeliharaan aset</li>
-                <li>Laporan Neraca Aset Daerah</li>
-                <li>Kartu Inventaris Barang (KIB) digital</li>
-                <li>Monitoring aset lintas OPD</li>
-
-            </ul>
-            <p class="project-desc">
-                Sistem terintegrasi lintas OPD untuk monitoring dan pelaporan aset
-                pemerintah daerah secara akurat dan terstandarisasi.
+                <span data-lang="en" style="display:none;">
+                    Key features: Map-based asset geo-tagging, asset depreciation,
+                    maintenance management, balance sheet reporting, and Asset Inventory Cards (KIB).
+                </span>
             </p>
 
             <a href="http://bmd.crosslink.my.id/" target="_blank">
@@ -296,15 +358,21 @@
         <!-- Project 5 -->
         <div class="project">
             <div class="project-tags">
-                <span class="tag tag-enterprise">Enterprise</span>
+                <span class="tag tag-enterprise">🏢 Enterprise</span>
             </div>
 
             <h3>Rewards LDS Group</h3>
             <p class="project-desc">
-                CRM dan Rewards System untuk LDS Group dengan integrasi Host-to-Host
-                middleware menggunakan ESB Loop & ESB Order.
-            </p>
+                <span data-lang="id">
+                    Sistem CRM dan rewards untuk LDS Group dengan integrasi Host-to-Host
+                    melalui middleware ESB Loop dan ESB Order.
+                </span>
 
+                <span data-lang="en" style="display:none;">
+                    CRM and rewards system for LDS Group with Host-to-Host integration
+                    using ESB Loop and ESB Order middleware.
+                </span>
+            </p>
             <a href="http://rewards.ldsgroup.id/" target="_blank">
                 rewards.ldsgroup.id
             </a>
@@ -314,8 +382,10 @@
     <!-- CONTACT -->
     <!-- CONTACT -->
     <section class="card fade-in fade-4" id="contact">
-        <h2>Contact</h2>
-
+        <h2>
+            <span data-lang="id">Kontak</span>
+            <span data-lang="en" style="display:none;">Contact</span>
+        </h2>
         <div class="contact-actions">
             <a href="mailto:edicybereyee@gmail.com" class="btn btn-primary">
                 📧 Email
@@ -363,6 +433,28 @@
             document.querySelectorAll(".project").forEach(el => {
                 observer.observe(el);
             });
+        });
+    </script>
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll("[data-lang]").forEach(el => {
+                el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+            });
+
+            document.querySelectorAll(".lang-btn").forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`)
+                .classList.add("active");
+
+            localStorage.setItem("site-lang", lang);
+        }
+
+        // Load saved language
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedLang = localStorage.getItem("site-lang") || "id";
+            setLang(savedLang);
         });
     </script>
 
