@@ -11,7 +11,7 @@
 <body>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero fade-in fade-1">
         <img src="assets/img/1767693214080.png" alt="Edi Kurniawan" class="avatar" />
 
         <h1>Edi Kurniawan</h1>
@@ -27,7 +27,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="card">
+    <section class="card fade-in fade-2">
         <h2>About Me</h2>
         <p>
             Chief Technology Officer dengan pengalaman membangun sistem digital,
@@ -39,7 +39,7 @@
 
 
     <!-- SKILLS -->
-    <section class="card">
+    <section class="card fade-in fade-3">
         <h2>Core Skills</h2>
         <div class="skills">
             <span>System Architecture</span>
@@ -239,6 +239,36 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href"))
+                    .scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in");
+                        entry.target.style.animationDelay = "0.15s";
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            document.querySelectorAll(".project").forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
 </body>
+
 
 </html>
