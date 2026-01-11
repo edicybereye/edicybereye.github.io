@@ -118,3 +118,39 @@ footer {
     font-size: 14px;
     opacity: 0.7;
 }
+
+/* PROJECTS */
+.project {
+    margin-bottom: 26px;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.project-desc {
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
+
+.project ul {
+    padding-left: 18px;
+    margin-bottom: 8px;
+}
+
+.project ul li {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.project a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
