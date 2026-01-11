@@ -8,6 +8,8 @@
 body {
     background: #fafafa;
     color: #111;
+    padding: 0 16px;
+    /* ⬅️ penting untuk mobile */
 }
 
 /* HERO */
@@ -153,4 +155,58 @@ footer {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+
+    .hero {
+        min-height: auto;
+        /* ⬅️ hilangkan 100vh */
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .company {
+        gap: 6px;
+    }
+
+    .company span {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        margin: 20px 0;
+        /* ⬅️ lebih rapat */
+        padding: 20px;
+        /* ⬅️ padding aman */
+        border-radius: 14px;
+    }
+
+    .project h3 {
+        font-size: 16px;
+    }
+
+    .project-desc,
+    .project ul li {
+        font-size: 13px;
+    }
 }
