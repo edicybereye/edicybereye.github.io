@@ -210,3 +210,34 @@ footer {
         font-size: 13px;
     }
 }
+
+/* PROJECT TAGS */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* Tag Variants */
+.tag-government {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.tag-enterprise {
+    background: #ecfeff;
+    color: #0f766e;
+}
+
+.tag-web3 {
+    background: #fef3c7;
+    color: #92400e;
+}
