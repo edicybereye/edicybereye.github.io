@@ -243,6 +243,11 @@ footer {
     }
 }
 
+.contact-actions .btn-primary:hover {
+    background: #34d399;
+    /* sedikit lebih hijau */
+}
+
 /* PROJECT TAGS */
 .project-tags {
     display: flex;
