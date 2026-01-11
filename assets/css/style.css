@@ -316,3 +316,29 @@ footer {
 .fade-6 {
     animation-delay: 1.2s;
 }
+
+/* PROJECT GALLERY */
+.project-gallery {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin: 12px 0 16px;
+    scroll-snap-type: x mandatory;
+}
+
+.project-gallery img {
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 0 6px 0 #111;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    background: #eee;
+}
+
+/* Desktop sedikit lebih besar */
+@media (min-width: 768px) {
+    .project-gallery img {
+        height: 200px;
+    }
+}
